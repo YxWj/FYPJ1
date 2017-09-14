@@ -107,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\TestPage1.aspx" />
-    <Content Include="Pages\TestPage2.aspx" />
+    <Content Include="Pages\Main Dashboard Page.aspx" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -133,12 +133,12 @@
     <Compile Include="Pages\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Pages\TestPage2.aspx.cs">
-      <DependentUpon>TestPage2.aspx</DependentUpon>
+    <Compile Include="Pages\Main Dashboard Page.aspx.cs">
+      <DependentUpon>Main Dashboard Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\TestPage2.aspx.designer.cs">
-      <DependentUpon>TestPage2.aspx</DependentUpon>
+    <Compile Include="Pages\Main Dashboard Page.aspx.designer.cs">
+      <DependentUpon>Main Dashboard Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\TestPage1.aspx.cs">
