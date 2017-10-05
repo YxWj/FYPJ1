@@ -88,6 +88,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Pages\Dashboard2.aspx" />
     <Content Include="Pages\MasterPage.Master" />
     <Content Include="Content\glyphicons-halflings-regular.eot" />
     <Content Include="Content\glyphicons-halflings-regular.ttf" />
@@ -106,8 +107,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Room1Page.aspx" />
     <Content Include="Pages\TestPage1.aspx" />
-    <Content Include="Pages\Main Dashboard Page.aspx" />
     <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -121,11 +122,19 @@
     <Content Include="Scripts\lumino.glyphs.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Utils\WebService.asmx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Dashboard2.aspx.cs">
+      <DependentUpon>Dashboard2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard2.aspx.designer.cs">
+      <DependentUpon>Dashboard2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,12 +142,12 @@
     <Compile Include="Pages\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Main Dashboard Page.aspx.cs">
-      <DependentUpon>Main Dashboard Page.aspx</DependentUpon>
+    <Compile Include="Pages\Room1Page.aspx.cs">
+      <DependentUpon>Room1Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Main Dashboard Page.aspx.designer.cs">
-      <DependentUpon>Main Dashboard Page.aspx</DependentUpon>
+    <Compile Include="Pages\Room1Page.aspx.designer.cs">
+      <DependentUpon>Room1Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\TestPage1.aspx.cs">
@@ -148,9 +157,17 @@
     <Compile Include="Pages\TestPage1.aspx.designer.cs">
       <DependentUpon>TestPage1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Utils\DatabaseUtils.cs" />
+    <Compile Include="Utils\WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pictures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
